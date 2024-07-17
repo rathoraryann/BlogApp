@@ -13,7 +13,7 @@ function AllPosts() {
   return (
     <div className='w-full py-8'>
         <Container>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', margin: '2px' }}>
+        <div className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] mx-5 ">
                 {posts.map((post) => (
                     <div key={post.$id}>
                         <PostCard {...post} />
