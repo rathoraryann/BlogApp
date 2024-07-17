@@ -13,9 +13,9 @@ function AllPosts() {
   return (
     <div className='w-full py-8'>
         <Container>
-            <div className='flex flex-wrap'>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', margin: '2px' }}>
                 {posts.map((post) => (
-                    <div key={post.$id} className='p-2 w-1/4'>
+                    <div key={post.$id}>
                         <PostCard {...post} />
                     </div>
                 ))}
